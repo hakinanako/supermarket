@@ -1,4 +1,4 @@
-package org.hakiko.supermarket;
+package org.hakiko.supermarket.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

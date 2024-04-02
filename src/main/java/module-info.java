@@ -5,4 +5,6 @@ module org.hakiko.supermarket {
 
     opens org.hakiko.supermarket to javafx.fxml;
     exports org.hakiko.supermarket;
+    exports org.hakiko.supermarket.controller;
+    opens org.hakiko.supermarket.controller to javafx.fxml;
 }
