@@ -1,7 +1,8 @@
 package org.hakiko.supermarket.bean;
 
+import lombok.Data;
 import java.util.Date;
-
+@Data
 public class Employee {
     private int employeeID;
     private String name;
@@ -11,6 +12,4 @@ public class Employee {
     private Date hireDate;
     private String remark;
     private int isDeleted;
-
-    // getters and setters
 }

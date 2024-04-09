@@ -1,10 +1,9 @@
-module org.hakiko.supermarket {
+open module org.hakiko.supermarket {
     requires javafx.controls;
     requires javafx.fxml;
-
-
-    opens org.hakiko.supermarket to javafx.fxml;
+    requires java.sql;
+    requires static lombok;
+    requires org.slf4j;
     exports org.hakiko.supermarket;
     exports org.hakiko.supermarket.controller;
-    opens org.hakiko.supermarket.controller to javafx.fxml;
 }
