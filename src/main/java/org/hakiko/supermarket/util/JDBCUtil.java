@@ -1,29 +1,21 @@
-// Java
-package org.hakiko.supermarket.utils;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+package org.hakiko.supermarket.util;
+import java.sql.*;
 
 public class JDBCUtil {
-    private static final String URL = "jdbc:mysql://localhost:3306/mydatabase";
-    private static final String USERNAME = "username";
-    private static final String PASSWORD = "password";
+    private static final String URL = "jdbc:mysql://121.40.229.172:3306/supermarket";
+    private static final String USER = "admin";
+    private static final String PASSWORD = "abc123";
 
     static {
         try {
-            // Load the JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
-            throw new ExceptionInInitializerError(e);
+            e.printStackTrace();
         }
     }
 
     public static Connection getConnection() throws SQLException {
-        // Get a connection to the database
-        return DriverManager.getConnection(URL, USERNAME, PASSWORD);
+        return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
     public static void close(Connection conn, Statement stmt) {

@@ -1,4 +1,4 @@
-CREATE TABLE Members (
+CREATE TABLE members (
                          MemberID INT AUTO_INCREMENT PRIMARY KEY, -- 会员的唯一标识符
                          Name VARCHAR(255) NOT NULL, -- 会员姓名
                          Email VARCHAR(100), -- 会员邮箱，用于联系和发送通知

@@ -1,4 +1,4 @@
-CREATE TABLE SPUs (
+CREATE TABLE spu (
                       SPU_ID INT AUTO_INCREMENT PRIMARY KEY, -- SPU的唯一标识符
                       Name VARCHAR(255) NOT NULL, -- 商品的通用名称
                       Category VARCHAR(100), -- 商品所属的类别

@@ -1,4 +1,4 @@
-CREATE TABLE Transactions (
+CREATE TABLE transactions (
                               TransactionID INT AUTO_INCREMENT PRIMARY KEY, -- 交易的唯一标识符，每笔交易一个唯一ID
                               TotalAmount DECIMAL(10, 2), -- 该笔交易的总金额
                               TransactionDate DATETIME, -- 交易发生的日期和时间

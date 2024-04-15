@@ -1,7 +1,9 @@
-package org.hakiko.supermarket.bean;
+package org.hakiko.supermarket.entity;
 
 import lombok.Data;
-import java.util.Date;
+
+import java.time.LocalDateTime;
+
 @Data
 public class Employee {
     private int employeeID;
@@ -9,7 +11,7 @@ public class Employee {
     private String position;
     private String email;
     private String phoneNumber;
-    private Date hireDate;
+    private LocalDateTime hireDate;
     private String remark;
-    private int isDeleted;
+    private boolean isDeleted;
 }

@@ -4,6 +4,6 @@ open module org.hakiko.supermarket {
     requires java.sql;
     requires static lombok;
     requires org.slf4j;
-    exports org.hakiko.supermarket;
-    exports org.hakiko.supermarket.controller;
+    requires java.desktop;
+    requires mysql.connector.java;
 }
